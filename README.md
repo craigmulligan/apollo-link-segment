@@ -30,6 +30,10 @@ ApolloLink.from([apolloLogger()]);
 But you can pass a custom analytics instance to use
 
 ```javascript
+const segmentInstance = require('analytics.js-loader')({
+  writeKey: YOUR_SEGMENT_WRITE_KEY
+});
+
 import apolloSegment from 'apollo-link-segment';
 
 ApolloLink.from([
@@ -50,4 +54,23 @@ ApolloLink.from([
     operationWhitelist: ['mutation']
   })
 ]);
+```
+
+By default the analytics.track will be called with the operation name as the event name and the operation as the event metadata.
+
+For example the following query:
+
+```
+query GetUser {
+  user {
+    id
+    name
+  }
+}
+```
+
+Will result in the following analytics.js call:
+
+```
+analytics.track('GetUser', <GraphqlOperationDetails>)
 ```
