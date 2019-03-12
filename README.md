@@ -24,7 +24,7 @@ By default the link assumes segment is ready for use at `window.analytics`.
 ```javascript
 import apolloSegment from 'apollo-link-segment';
 
-ApolloLink.from([apolloLogger()]);
+ApolloLink.from([apolloSegment()]);
 ```
 
 But you can pass a custom analytics instance to use
@@ -37,7 +37,7 @@ const segmentInstance = require('analytics.js-loader')({
 import apolloSegment from 'apollo-link-segment';
 
 ApolloLink.from([
-  apolloLogger({
+  apolloSegment({
     analytics: segmentInstance
   })
 ]);
@@ -49,7 +49,7 @@ By default all operation types will be tracked by you can optionally provide a w
 import apolloSegment from 'apollo-link-segment';
 
 ApolloLink.from([
-  apolloLogger({
+  apolloSegment({
     // only mutations will be tracked
     operationWhitelist: ['mutation']
   })
