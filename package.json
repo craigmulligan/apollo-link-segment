@@ -1,10 +1,9 @@
 {
   "name": "apollo-link-segment",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "Auto analytics for apollo apps",
-  "main": "build/module/index.js",
-  "typings": "build/module/index.d.ts",
-  "module": "build/module/index.js",
+  "main": "build/main/index.js",
+  "typings": "build/main/index.d.ts",
   "repository": "https://github.com/hobochild/apollo-link-segment",
   "license": "MIT",
   "keywords": [],
