@@ -1,6 +1,6 @@
 {
   "name": "apollo-link-segment",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "description": "Auto analytics for apollo apps",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",

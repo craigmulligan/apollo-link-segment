@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.9"></a>
+## [0.1.9](https://github.com/hobochild/apollo-link-segment/compare/v0.1.7...v0.1.9) (2020-04-11)
+
+
+
 <a name="0.1.7"></a>
 ## [0.1.7](https://github.com/hobochild/apollo-link-segment/compare/v0.1.5...v0.1.7) (2019-03-13)
 
