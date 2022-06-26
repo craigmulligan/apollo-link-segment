@@ -22,7 +22,7 @@ npm install apollo-link-segment
 By default the link assumes segment is ready for use at `window.analytics`.
 
 ```javascript
-import apolloSegment from 'apollo-link-segment';
+import apolloSegment from "apollo-link-segment";
 
 ApolloLink.from([apolloSegment()]);
 ```
@@ -30,29 +30,29 @@ ApolloLink.from([apolloSegment()]);
 But you can pass a custom analytics instance to use
 
 ```javascript
-const segmentInstance = require('analytics.js-loader')({
-  writeKey: YOUR_SEGMENT_WRITE_KEY
+const segmentInstance = require("analytics.js-loader")({
+  writeKey: YOUR_SEGMENT_WRITE_KEY,
 });
 
-import apolloSegment from 'apollo-link-segment';
+import apolloSegment from "apollo-link-segment";
 
 ApolloLink.from([
   apolloSegment({
-    analytics: segmentInstance
-  })
+    analytics: segmentInstance,
+  }),
 ]);
 ```
 
 By default all operation types will be tracked by you can optionally provide a whitelist.
 
 ```javascript
-import apolloSegment from 'apollo-link-segment';
+import apolloSegment from "apollo-link-segment";
 
 ApolloLink.from([
   apolloSegment({
     // only mutations will be tracked
-    operationWhitelist: ['mutation']
-  })
+    operationWhitelist: ["mutation"],
+  }),
 ]);
 ```
 
