@@ -18,7 +18,7 @@
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "fmt": "prettier --write ./",
     "fmt_check": "prettier --check ./",
-    "build": "microbundle"
+    "build": "microbundle && cp src/index.d.ts ./dist/"
   },
   "engines": {
     "node": ">=14"
