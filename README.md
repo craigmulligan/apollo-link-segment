@@ -60,7 +60,7 @@ By default the analytics.track will be called with the operation name as the eve
 
 For example the following query:
 
-```
+```graphql
 query GetUser {
   user {
     id
@@ -71,6 +71,6 @@ query GetUser {
 
 Will result in the following analytics.js call:
 
-```
+```javascript
 analytics.track('GetUser', <GraphqlOperationDetails>)
 ```
