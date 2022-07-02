@@ -1,4 +1,5 @@
 import { OperationTypeNode } from "graphql";
+import { ApolloLink } from "apollo-link";
 
 type Opts = {
   analytics?: {
@@ -7,6 +8,4 @@ type Opts = {
   operationWhitelist?: OperationTypeNode[];
 };
 
-// TODO update any to ApolloLink
-type link = (opts: Opts) => any;
-export default link;
+export default function link(opts: Opts): ApolloLink;
